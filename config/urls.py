@@ -39,6 +39,7 @@ admin_urls = [
 
 urlpatterns = [
     path("", include("users.urls")),
+    path("", include("product.urls")),
     path("", include(docs_urls)),
     path("", include(admin_urls)),
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
